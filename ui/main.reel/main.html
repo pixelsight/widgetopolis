@@ -2,21 +2,109 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" href="main.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "button2": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button2"},
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "button3": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button3"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "image": {
+            "prototype": "digit/ui/image.reel",
+            "properties": {
+                "element": {"#": "image"},
+                "contenteditable": "true",
+                "crossOrigin": null,
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "promiseController": {
+            "prototype": "montage/core/promise-controller",
+            "properties": {
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "select": {
+            "prototype": "digit/ui/select.reel",
+            "properties": {
+                "element": {"#": "select"}
+            }
+        },
+        "substitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "substitution"},
+                "dir": "ltr",
+                "draggable": "true"
             }
         }
+    }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <button data-montage-id="button">
+
+        </button>
+        <button data-montage-id="button2"></button>
+        <div data-montage-id="substitution"></div>
+        <ul data-montage-id="repetition">
+            <li></li>
+        </ul>
+        <img data-montage-id="image">
+        <select data-montage-id="select">
+            <option value="">
+                Select
+            </option>
+        </select>
+    </div>
 </body>
 </html>
